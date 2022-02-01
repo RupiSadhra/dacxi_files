@@ -1,0 +1,304 @@
+/*
+Theme Name: Daxci 
+Theme URI: 
+Author: Rupi Codes 
+Version: 1.0
+Text Domain:
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html,
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 1rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-width-extra {
+    width: 97%;
+    margin: auto;
+}
+
+.column-width {
+    width: 90%;
+    margin: auto;
+}
+
+.four-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1.5fr 0.5fr;
+    grid-gap: 1rem;
+}
+
+.button-style {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.8rem;
+    cursor: pointer;
+    background-color: #AC6AFB;
+    border-radius: 3rem;
+    margin-top: 0.1rem;
+}
+
+
+/* elementor classes */
+
+
+/* main header */
+
+.menu-font {
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.1rem;
+}
+
+.header-container {
+    border-bottom: 2px solid #fff;
+    padding: 10px 0;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 80px;
+    transition: all 0.5s ease;
+}
+
+.header-container section {
+    padding: 0 4rem 0 1rem;
+}
+
+.header-top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.header-top-menu li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 3rem;
+}
+
+.hamburger-container {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    justify-self: flex-end;
+    align-self: center;
+    max-width: 2vw;
+    margin-top: 5px;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 1px;
+    margin-top: 7px;
+    background-color: #fff;
+}
+
+.register-button {
+    justify-self: center;
+}
+
+
+/* menu */
+
+.mobile-menu-container {
+    width: 0;
+    height: 0;
+    background: linear-gradient(180deg, #000031 0%, #11509D 100%);
+    position: absolute;
+    z-index: 99;
+    top: calc(8vh + 0.8rem);
+    left: 0%;
+    transition: all 0.5s ease;
+}
+
+.mobile-menu {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-logo {
+    position: absolute;
+    top: 2.2vh;
+    left: 0;
+    z-index: 999;
+}
+
+.mobile-logo-link {
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.mobile-logo-link img {
+    width: 120px;
+    height: auto;
+    margin: -1.5rem 0 0 -1rem;
+}
+
+.primary-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-menu li a {
+    color: #fff;
+    padding-bottom: 1rem;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+}
+
+.primary-menu li a:hover {}
+
+.primary-menu li {
+    margin-top: 1rem;
+}
+
+.primary-menu ul.sub-menu {
+    display: none;
+}
+
+.hide-element {
+    display: none;
+}
+
+.show-element {
+    display: block;
+}
+
+.show-hamburger {
+    opacity: 1;
+}
+
+.hide-hamburger {
+    opacity: 0;
+}
+
+.full-width {
+    width: 30vw !important;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.letter-one {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+.letter-two {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+.secondary-menu-container {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10vw;
+    height: 100%;
+    background: linear-gradient(180deg, #AC6AFB 0%, #000031 100%);
+    transition: all 0.5s ease;
+}
+
+.secondary-menu-links {
+    width: 100%;
+    height: 80%;
+    transition: all 0.3s ease;
+}
+
+.secondary-links a {
+    display: inline-block;
+    color: #fff;
+    padding-bottom: 1rem;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+}
+
+.secondary-links {
+    list-style-type: none;
+}
+
+.secondary-mobile-menu {
+    left: 0;
+    width: 100vw !important;
+    display: block !important;
+}
+
+.zero-width {
+    width: 0 !important;
+}
+
+@media (max-width:1300px) {
+    .four-column-grid {
+        grid-template-columns: 1fr 6fr 2fr 0.5fr;
+    }
+}
+
+@media (max-width:1000px) {
+    .four-column-grid {
+        grid-template-columns: 1fr 5fr 2.5fr 0.5fr;
+    }
+}
+
+@media (max-width:991px) {
+    .header-top-menu-container,
+    .register-button {
+        display: none;
+    }
+    .four-column-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .full-width {
+        width: 100vw !important;
+    }
+}
+
+@media (max-width:768px) {}
